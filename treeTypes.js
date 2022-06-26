@@ -3,6 +3,8 @@ function createRules(string) {
   // Reset values until told otherwise
   rules = [];
 
+  // This initilization stuff looks real messy
+  // But I cant be bothered to refactor it lol
   rootLen = 100;
   sentenceLength = 4;
   angleInc = 25;
