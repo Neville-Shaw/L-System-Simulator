@@ -1,0 +1,141 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+
+  <!-- Script references -->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="branch.js"></script>
+  <script language="javascript" type="text/javascript" src="treeTypes.js"></script>
+
+  <style>
+    
+    .wrapper {
+      position: relative;
+      
+      
+      width: 700;
+      margin: auto;
+      margin-top: 100;
+
+      text-align: center;
+    }
+    .canvas {
+      position: absolute;
+      text-align: center;
+    }
+    .stats {
+      
+      position: absolute;
+      display: outside;
+      width: 500;
+      
+      margin-left: 0;
+    }
+    .controls {
+      font-size: 20px;
+      font-family :Arial, Helvetica, sans-serif;
+      
+      text-align: left;
+      
+      position: absolute;
+      display: outside;
+      width: 230;
+      
+      margin-left: 700;
+    }
+
+    
+    .text {
+      position: relative;
+      display: outside;
+      
+      font-size: 20px;
+      font-family :Arial, Helvetica, sans-serif;
+      
+      text-align: left;
+     
+    }
+
+    .body {
+      background-color: rgb(44, 44, 44);
+      
+      vertical-align: middle;
+    }
+    .Rule2 {
+      display: outside;
+    }
+
+    
+    
+
+    </style>
+</head>
+
+<body class="body">
+  
+  
+    <div id="canvascontainer" class="wrapper">
+        <!-- Script references -->
+        <div id="canvascontainer"class="canvas">
+
+          <script src="sketch.js"></script>
+
+          
+          <div class="text" id="SceneText">
+            <div class="stats">
+              Axiom: "<span id="AxiomText">None</span>" <br/>
+
+              Iterations: <span id="SentenceIterations">0</span> <br/>
+              Angle: <span id="AngleStats">0</span> <br/>
+              <br/>
+              Rules: <br/>
+              <span id="Rule1A">None</span> -> "<span id="Rule1B">None</span>" <br/>
+              <span id="Rule2" class="Rule2">
+                <span id="Rule2A">None</span> -> "<span id="Rule2B">None</span>" 
+              </span><br/>
+            </div>
+
+
+          </div>
+          <div class="controls" id="controls">
+            CONTROLS: <br/>
+            1 = Basic Tree <br/>
+            2 = Small bush <br/>
+            3 = Big bush <br/>
+            4 = Rotated plant <br/>
+            5 = Kevs wispy tree <br/>
+            6 = Sierpinski's triangle <br/>
+            7 = Sierpinski's carpet <br/>
+            8 = Koch snowflake <br/>
+            9 = Hilberts curve <br/>
+            <br/>
+            Space = Hide Display <br/>
+            C = Hide Controls <br/>
+            E = Show Sentence <br/>
+            <br/>
+            M = Reset Tree<br/>
+            R = Rainbow Tree<br/>
+            G = Auto Generate Trees <br/>
+            <br/>
+            Alter GrowRate: <br/>
+            A/D = Inc/Dec  <br/>
+            0 = Set to zero  <br/>
+            P = Set to max <br/>
+            <br/>
+            GrowRate: <span id="GrowRateStat">0</span> <br/>
+            Auto Generate: <span id="AutoGenerate">false</span>
+          </div>
+          
+          
+          
+        </div>
+    </div>
+
+    
+  </div>
+  
+  
+</body>
+</html>
