@@ -44,7 +44,7 @@ let showLSystem;
 
 // Pretty obvious
 let rainbow = false;
-let GrowRate = 0;
+let GrowRate = 1;
 
 let autoGenerate = false;
 
